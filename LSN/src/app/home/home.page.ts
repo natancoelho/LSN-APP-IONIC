@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
+ templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private route: Router) { }
 
-  constructor() {}
-
+  perfil() {
+    this.route.navigate(['/perfil']);
+  }
+  home() {
+    this.route.navigate(['/home']);
+  }
+  atividade() {
+    this.route.navigate(['/atividade']);
+  }
 }

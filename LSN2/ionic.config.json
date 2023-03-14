@@ -1,0 +1,7 @@
+{
+  "name": "LSN2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

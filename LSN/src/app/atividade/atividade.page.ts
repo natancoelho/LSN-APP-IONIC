@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-atividade',
   templateUrl: './atividade.page.html',
   styleUrls: ['./atividade.page.scss'],
 })
-export class AtividadePage implements OnInit {
+export class AtividadePage {
+  constructor(private route: Router) { }
 
-  constructor() { }
-
-  ngOnInit() {
+  perfil() {
+    this.route.navigate(['/perfil']);
   }
-
+  home() {
+    this.route.navigate(['/home']);
+  }
+  atividade() {
+    this.route.navigate(['/atividade']);
+  }
 }

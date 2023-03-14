@@ -1,9 +1,81 @@
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Atividades</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-title>Atividade</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
 
 <ion-content>
+   
+    <ion-card>
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      </ion-card>
 
-</ion-content>
+      <ion-card>
+        <ion-card-header>
+            <ion-icon name="car"></ion-icon>
+            <ion-card-subtitle>Rua Fulano 12 12 de jan 12:00 - 12:50
+                R$20,20
+              </ion-card-subtitle>
+        </ion-card-header>
+      
+
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+            <ion-icon name="car"></ion-icon>
+          <ion-card-subtitle>Rua Fulano 12 12 de jan 12:00 - 12:50
+            R$20,20
+          </ion-card-subtitle>
+          <ion-icon name="caret-forward-outline"></ion-icon>
+        </ion-card-header>
+      
+       
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+            <ion-icon name="car"></ion-icon>
+            <ion-card-subtitle>Rua Fulano 12 12 de jan 12:00 - 12:50
+                R$20,20
+              </ion-card-subtitle>
+        </ion-card-header>
+      
+      </ion-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="secondary">
+        <ion-button (click)="home()">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+        <ion-button (click)="atividade()">
+          <ion-icon slot="icon-only" name="reader"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="primary">
+        <ion-button (click)="perfil()">
+          <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Navegação</ion-title>
+    </ion-toolbar>
+  </ion-footer>
