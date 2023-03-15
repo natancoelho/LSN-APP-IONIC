@@ -1,11 +1,19 @@
-
-.card3{
+ion-card-title{
+  text-align: center;
   margin-top: 20px;
 }
 
-ion-button{
-  margin: 10px;
+ion-card-subtitle{
+  text-align: center;
+  margin-top: 10px;
 }
-h4{
-  margin-left: 10px;
+
+ion-button{
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 235px;
+}
+
+img{
+  border-radius: 10px;
 }

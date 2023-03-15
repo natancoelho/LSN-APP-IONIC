@@ -14,7 +14,7 @@ export class AtividadePage {
     this.route.navigate(['/perfil']);
   }
   home() {
-    this.route.navigate(['/home']);
+    this.route.navigate(['/inicial']);
   }
   atividade() {
     this.route.navigate(['/atividade']);

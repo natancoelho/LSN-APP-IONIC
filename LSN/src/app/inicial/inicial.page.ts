@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
-  selector: 'app-perfil',
-  templateUrl: './perfil.page.html',
-  styleUrls: ['./perfil.page.scss'],
+  selector: 'app-inicial',
+  templateUrl: './inicial.page.html',
+  styleUrls: ['./inicial.page.scss'],
 })
-export class PerfilPage  {
+export class InicialPage {
   constructor(private route: Router) { }
 
   perfil() {

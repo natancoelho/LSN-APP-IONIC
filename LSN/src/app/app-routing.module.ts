@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'inicial',
+    loadChildren: () => import('./inicial/inicial.module').then( m => m.InicialPageModule)
+  },
 ];
 
 
