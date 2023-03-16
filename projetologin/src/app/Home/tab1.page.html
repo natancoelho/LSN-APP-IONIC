@@ -1,0 +1,66 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title> Home </ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-button color="dark" expand="full" shape="round" (click)="logout()">Logout</ion-button>
+
+	<ion-card>
+		<img alt="Silhouette of mountains" src="/assets/LNS PASS 2.jpg" />
+	  </ion-card>
+	
+	  <div>
+		<ion-list style="text-align:center">
+	
+		  
+	
+		
+	  <ion-button color="dark" (click)="home()">
+	  <ion-icon name="call-outline"></ion-icon>
+	  </ion-button>
+	
+	  <ion-button color="dark" (click)="home()">
+		<ion-icon name="car"></ion-icon>
+		</ion-button>
+	
+	
+		<ion-button color="dark" (click)="home()">
+		  <ion-icon name="reader"></ion-icon>
+		  </ion-button>
+		</ion-list>
+	</div>
+	
+	<ion-searchbar placeholder="Pesquisar estacionamentos"></ion-searchbar>
+	
+	<div class="card3">
+	
+	<ion-button color="dark" expand="block">
+		<ion-icon slot="start" name="car"></ion-icon>
+		Ultimo estacionamento
+	</ion-button>
+	<ion-button color="dark" expand="block">
+		<ion-icon slot="start" name="star"></ion-icon>
+		Estacionamentos salvos
+	</ion-button>
+	<ion-button color="dark" expand="block">
+		<ion-icon slot="start" name="card"></ion-icon>
+		Ultimos pagamentos
+	</ion-button>
+	</div>
+	
+	<h4>
+	  Estacionamentos perto de você
+	</h4>
+	<ion-card>
+	  <img src="/assets/maps.PNG" />
+	</ion-card>
+	
+	
+	
+	
+</ion-content>
+
+
+	

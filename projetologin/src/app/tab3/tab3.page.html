@@ -1,14 +1,24 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Perfil</ion-title>
+    <ion-title>
+      Perfil
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <app-explore-container name="Tab 3 page"></app-explore-container>
 
   <ion-item>
     <ion-avatar slot="start">
-      <img alt="Silhouette of a person's head" src="vi/assets/NATE NATALINO.png" />
+      <img alt="Silhouette of a person's head" src="/assets/NATE NATALINO.png" />
     </ion-avatar>
     <ion-label>
       Natan dos Santos Coelho
@@ -16,11 +26,12 @@
     <ion-icon name="star"></ion-icon>
   </ion-item>
   
+  <div class="top">
   <ion-card>
-    <ion-icon name="call"></ion-icon>
+    <ion-icon name="checkmark"></ion-icon>
     <ion-card-header>
       <ion-card-title>LSN Pass</ion-card-title>
-      <ion-button>Assine Já</ion-button>
+      <ion-button color="dark" >Assine Já</ion-button>
     </ion-card-header>
   
     
@@ -30,7 +41,7 @@
     <ion-icon name="call"></ion-icon>
     <ion-card-header>
       <ion-card-title>Central de Atendimento</ion-card-title>
-      <ion-button>Ligue agora</ion-button>
+      <ion-button color="dark">Ligue agora</ion-button>
     </ion-card-header>
   
     
@@ -40,12 +51,14 @@
     <ion-icon name="cash"></ion-icon>
     <ion-card-header>
       <ion-card-title>Metodos de Pagamento</ion-card-title>
-      <ion-button>Acessar</ion-button>
+      
+      <ion-button color="dark" >Acessar</ion-button>
     </ion-card-header>
   </ion-card>
+</div>
 
 
-  <ion-card>
+  <ion-card class="geral">
     <ion-card-header>
       <ion-card-title>Geral</ion-card-title>
     </ion-card-header>
@@ -84,22 +97,7 @@
     </ion-card-content>
   </ion-card>
 
+
+
+
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-buttons slot="secondary">
-      <ion-button (click)="home()">
-        <ion-icon slot="icon-only" name="home"></ion-icon>
-      </ion-button>
-      <ion-button (click)="atividade()">
-        <ion-icon slot="icon-only" name="reader"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-buttons slot="primary">
-      <ion-button (click)="perfil()">
-        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Menu</ion-title>
-  </ion-toolbar>
-</ion-footer>

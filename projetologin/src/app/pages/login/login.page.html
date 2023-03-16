@@ -1,0 +1,37 @@
+
+<ion-content>
+	<h1>
+		LSN PARKING
+	</h1>
+	<img alt="Silhouette of mountains" src="/assets/parkingpreto.png" />
+	<form (ngSubmit)="login()" [formGroup]="credentials">
+		<div class="input-group">
+			<ion-item>
+				<ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+			</ion-item>
+			<div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+				<span *ngIf="email.errors?.required">Email requerido</span>
+				<span *ngIf="email.errors?.email">Email inválido</span>
+			</div>
+			<ion-item>
+				<ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+			</ion-item>
+			<div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+				<span *ngIf="password.errors?.required">Password requerido</span>
+				<span *ngIf="password.errors?.minlength">Password mínimo 6 caracteres</span>
+			</div>
+		</div>
+
+		<ion-button type="submit" expand="block" color="dark" [disabled]="!credentials.valid">Login</ion-button>
+		
+
+		<ion-button  type="button" expand="block" color="dark">
+			<ion-icon name="logo-google" slot="start"></ion-icon>
+			Sign in with Google
+		</ion-button>
+		<ion-button type="button" color="dark" expand="block" color="dark">
+			<ion-icon name="arrow-forward" slot="start"></ion-icon>
+			Cadastrar
+		</ion-button>
+	</form>
+</ion-content>
