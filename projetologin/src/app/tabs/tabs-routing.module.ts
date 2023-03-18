@@ -20,6 +20,18 @@ const routes: Routes = [
 				loadChildren: () => import('../tab3/tab3.module').then((m) => m.Tab3PageModule)
 			},
 			{
+				path: 'lsnpass',
+				loadChildren: () => import('../lsnpass/lsnpass.module').then((m) => m.LsnpassPageModule)
+			},
+			{
+				path: 'pagamentos',
+				loadChildren: () => import('../pagamentos/pagamentos.module').then((m) => m.PagamentosPageModule)
+			},
+			{
+				path: 'buscar',
+				loadChildren: () => import('../buscar/buscar.module').then((m) => m.BuscarPageModule)
+			},
+			{
 				path: '',
 				redirectTo: '/tabs/tab1',
 				pathMatch: 'full'

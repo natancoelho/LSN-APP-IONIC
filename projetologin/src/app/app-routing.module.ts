@@ -22,7 +22,19 @@ const routes: Routes = [
 		path: '',
 		redirectTo: '/login',
 		pathMatch: 'full'
-	}
+	},
+  {
+    path: 'lsnpass',
+    loadChildren: () => import('./lsnpass/lsnpass.module').then( m => m.LsnpassPageModule)
+  },
+  {
+    path: 'pagamentos',
+    loadChildren: () => import('./pagamentos/pagamentos.module').then( m => m.PagamentosPageModule)
+  },
+  {
+    path: 'buscar',
+    loadChildren: () => import('./buscar/buscar.module').then( m => m.BuscarPageModule)
+  }
 ];
 @NgModule({
 	imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],

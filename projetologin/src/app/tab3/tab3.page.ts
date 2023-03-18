@@ -15,7 +15,10 @@ export class Tab3Page {
   home() {
     this.route.navigate(['/inicial']);
   }
-  atividade() {
-    this.route.navigate(['/atividade']);
+  pagamentos() {
+    this.route.navigate(['/tabs/pagamentos']);
+  }
+  pass() {
+    this.route.navigate(['/tabs/lsnpass']);
   }
 }

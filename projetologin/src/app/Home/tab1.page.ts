@@ -15,12 +15,18 @@ export class Tab1Page {
 		this.route.navigateByUrl('/', { replaceUrl: true });
 	}
 	perfil() {
-		this.route.navigate(['/perfil']);
+		this.route.navigate(['/tabs/tab3']);
 	  }
 	  home() {
 		this.route.navigate(['/inicial']);
 	  }
 	  atividade() {
-		this.route.navigate(['/atividade']);
+		this.route.navigate(['/tabs/tab2']);
+	  }
+	  buscar() {
+		this.route.navigate(['/tabs/buscar']);
+	  }
+	  pagamentos() {
+		this.route.navigate(['/tabs/pagamentos']);
 	  }
 }
